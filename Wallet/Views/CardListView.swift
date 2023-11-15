@@ -33,45 +33,45 @@ struct CardListView: View {
                         }
                     }
                     .padding()
-                
+                    
                     
                 }
                 .navigationBarHidden(true)
                 
-                    ZStack() {
-                        
-
-                        
-                        Rectangle()
-                            .fill(Color.black)
-                            .frame(width: 360, height: 200)
-                            .cornerRadius(15.0)
-                            .offset()
-                        
-                        Rectangle()
-                            .fill(Color.blue)
-                            .frame(width: 360, height: 200)
-                            .cornerRadius(15.0)
-                            .offset(CGSize(width: 0.0, height: 60.0))
-                        
-                        Rectangle()
-                            .fill(Color.red)
-                            .frame(width: 360, height: 200)
-                            .cornerRadius(15.0)
-                            .offset(CGSize(width: 0.0, height: 120.0))
-                        
-                        Rectangle()
-                            .fill(Color.green)
-                            .frame(width: 360, height: 200)
-                            .cornerRadius(15.0)
-                            .offset(CGSize(width: 0.0, height: 180.0))
-                         
-                        
-                    }
+                ZStack() {
                     
-       
-
-
+                    
+                    
+                    Rectangle()
+                        .fill(Color.black)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset()
+                    
+                    Rectangle()
+                        .fill(Color.blue)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset(CGSize(width: 0.0, height: 60.0))
+                    
+                    Rectangle()
+                        .fill(Color.red)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset(CGSize(width: 0.0, height: 120.0))
+                    
+                    Rectangle()
+                        .fill(Color.green)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset(CGSize(width: 0.0, height: 180.0))
+                    
+                    
+                }
+                
+                
+                
+                
                 
             }
             

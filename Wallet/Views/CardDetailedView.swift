@@ -9,8 +9,31 @@ import SwiftUI
 
 struct CardDetailedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ScrollView{
+                ZStack{
+                    
+                    Rectangle()
+                        .fill(Color.black)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset()
+                    
+                    Rectangle()
+                        .fill(Color.black)
+                        .frame(width: 360, height: 200)
+                        .cornerRadius(15.0)
+                        .offset()
+                    
+                 
+                }
+
+            }
+        }
+        
+        .navigationTitle("")
     }
+    
 }
 
 #Preview {
