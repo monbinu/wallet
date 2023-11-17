@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CardListView: View {
-    
+    @Environment(\.colorScheme)
+    var colorScheme
     var viewModel = CardViewModel()
     
     var body: some View {
@@ -25,11 +26,12 @@ struct CardListView: View {
                         } label: {
                             Image(systemName: "shippingbox.circle.fill")
                                 .font(.largeTitle)
-                                .background(Color(UIColor.systemBackground))
+                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
                             
                             Image(systemName: "plus.circle.fill")
                                 .font(.largeTitle)
                                 .background(Color(UIColor.systemBackground))
+                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
                             
                         }
                     }
@@ -45,9 +47,10 @@ struct CardListView: View {
                         
                         Image(card.imageName)
                             .aspectRatio(contentMode:.fill)
+                            .accessibilityLabel("wallet")
                             .frame(width: 360, height: 200)
                             .cornerRadius(15.0)
-                            .offset()
+
                             
                         
 
