@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class CardViewModel {
+    var cards:[CardIndividual] = [
+    CardIndividual(imageName: "")
+    
+    
+    
+    
+    
+    ]
+    }
+
