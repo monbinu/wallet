@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardListView: View {
+    @State private var isShowingSheet = false
     @Environment(\.colorScheme)
     var colorScheme
     var viewModel = CardViewModel()
@@ -45,29 +46,48 @@ struct CardListView: View {
                     
                     ForEach(viewModel.cards) { card in
                         
-                        Image(card.imageName)
-                            .aspectRatio(contentMode:.fill)
-                            .accessibilityLabel("wallet")
-                            .frame(width: 360, height: 200)
-                            .cornerRadius(15.0)
-
+                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                            Image(card.imageName)
+                                .aspectRatio(contentMode:.fill)
+                                .accessibilityLabel("wallet")
+                                .frame(width: 360, height: 220)
+                                .cornerRadius(15.0)
                             
-                        
-
+                            
+                        })
                         
                     }
+                    
+                    .sheet(isPresented: $isShowingSheet, content: {
+                        SheetView(message: "")
+                    })
+                    
+                    
+                    
                     
                     
                     
                 }
                 
+                
+                
             }
-            
-            
             
         }
         
         
+        
+    }
+    
+    
+}
+
+
+struct SheetView: View {
+    let message: String
+    
+    var body: some View {
+        Text(message)
     }
 }
 
