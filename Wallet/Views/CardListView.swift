@@ -44,43 +44,70 @@ struct CardListView: View {
                 
                 ZStack() {
                     
-                    ForEach(viewModel.cards) { card in
-                        
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                            Image(card.imageName)
-                                .aspectRatio(contentMode:.fill)
-                                .accessibilityLabel("wallet")
-                                .frame(width: 360, height: 220)
-                                .cornerRadius(15.0)
-                            
-                            
-                        })
-                        
-                    }
+                    //ForEach(viewModel.cards) { card in
                     
-                    .sheet(isPresented: $isShowingSheet, content: {
-                        SheetView(message: "")
+                    
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Image("card_blue")
+                            .aspectRatio(contentMode:.fill)
+                            .accessibilityLabel("wallet")
+                            .frame(width: 360, height: 220)
+                            .cornerRadius(15.0)
+                    })
+                    
+                    Button(action: {print("hello")}, label: {
+                        Image("card_green")
+                            .aspectRatio(contentMode:.fill)
+                            .accessibilityLabel("wallet")
+                            .frame(width: 360, height: 220)
+                            .opacity(1.0)
+                            .cornerRadius(15.0)
+                            .offset(y:50)
+                        
+                        
                     })
                     
                     
                     
                     
+                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                        Image("card_black")
+                            .aspectRatio(contentMode:.fill)
+                            .accessibilityLabel("wallet")
+                            .frame(width: 360, height: 220)
+                            .cornerRadius(15.0)
+                            .offset(y:100)
+                        
+                        
+                        
+                    })
                     
                     
                 }
+                
+                .sheet(isPresented: $isShowingSheet, content: {
+                    SheetView(message: "")
+                })
+                
+                
+                
                 
                 
                 
             }
             
+            
+            
         }
-        
-        
         
     }
     
     
+    
 }
+
+
+
 
 
 struct SheetView: View {
