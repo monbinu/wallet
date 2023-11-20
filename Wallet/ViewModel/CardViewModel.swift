@@ -7,13 +7,14 @@
 
 import Foundation
 
-class CardViewModel {
+struct CardViewModel {
     
     var cards:[CardIndividual] = [
-        CardIndividual(imageName: "card_blue", color: .black),
-        CardIndividual(imageName: "", color: .red),
-        CardIndividual(imageName: "", color: .green),
-        CardIndividual(imageName: "", color: .blue)
+        CardIndividual(imageName: "card_apple"),
+        CardIndividual(imageName: "card_cash"),
+        CardIndividual(imageName: "card_ka")
     ]
-    }
+    
+    
+}
 

@@ -6,3 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct TicketIndividual: Identifiable {
+    
+    var id: UUID = UUID()
+
+    var imageName: String = "noimage"
+    
+    
+    
+    
+}

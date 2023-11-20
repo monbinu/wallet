@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct CardListView: View {
+    @State private var showingSheet = false
     @State private var isShowingSheet = false
     @Environment(\.colorScheme)
     var colorScheme
     var viewModel = CardViewModel()
+    var ticketModel = TicketViewModel()
+    
     
     var body: some View {
         
@@ -40,73 +43,58 @@ struct CardListView: View {
                     
                     
                 }
-                .navigationBarHidden(true)
                 
-                ZStack() {
-                    
-                    //ForEach(viewModel.cards) { card in
-                    
-                    
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image("card_blue")
-                            .aspectRatio(contentMode:.fill)
-                            .accessibilityLabel("wallet")
-                            .frame(width: 360, height: 220)
-                            .cornerRadius(15.0)
-                    })
-                    
-                    Button(action: {print("hello")}, label: {
-                        Image("card_green")
-                            .aspectRatio(contentMode:.fill)
-                            .accessibilityLabel("wallet")
-                            .frame(width: 360, height: 220)
-                            .opacity(1.0)
-                            .cornerRadius(15.0)
-                            .offset(y:50)
+                
+                
+                VStack() {
+                    ForEach(viewModel.cards) { card in
+                        CardDetailedView(card: card)
                         
-                        
-                    })
+                    }
+                }
+                .padding(.bottom,50)
+                
+                VStack() {
+                    
+                    ForEach(ticketModel.tickets) { ticket in
+                        TicketDetailedView(ticket: ticket)
+                    }
                     
                     
                     
                     
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                        Image("card_black")
-                            .aspectRatio(contentMode:.fill)
-                            .accessibilityLabel("wallet")
-                            .frame(width: 360, height: 220)
-                            .cornerRadius(15.0)
-                            .offset(y:100)
-                        
-                        
-                        
-                    })
-                    
-                    
+                    ZStack(alignment: .bottom) {
+                        ScrollView{
+                            
+                        }
+                        VStack{
+                            
+                            
+                            Button(action: {
+                                
+                            }) {
+                                Text("View 56 Expired Passes")
+                            }
+                            
+                        }
+                    }
                 }
                 
-                .sheet(isPresented: $isShowingSheet, content: {
-                    SheetView(message: "")
-                })
                 
                 
-                
-                
-                
-                
-            }
+            }.sheet(isPresented: $isShowingSheet, content: {
+                SheetView(message: "")
+            })
             
-            
+
             
         }
         
+        
+        
     }
     
-    
-    
 }
-
-
 
 
 

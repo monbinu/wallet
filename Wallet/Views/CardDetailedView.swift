@@ -8,34 +8,35 @@
 import SwiftUI
 
 struct CardDetailedView: View {
+
+    
+    var card: CardIndividual
+
+    
     var body: some View {
-        NavigationStack{
-            ScrollView{
+
                 ZStack{
                     
-                    Rectangle()
-                        .fill(Color.black)
-                        .frame(width: 360, height: 200)
-                        .cornerRadius(15.0)
-                        .offset()
+                    Button(action: {}, label: {
+                        Image(card.imageName)
+                            .aspectRatio(contentMode:.fit)
+                            .accessibilityLabel("wallet")
+                            .frame(width: 360, height: 229)
+                            .cornerRadius(12.0)
+                        
+                        
+                    })
+                    .padding()
                     
-                    Rectangle()
-                        .fill(Color.black)
-                        .frame(width: 360, height: 200)
-                        .cornerRadius(15.0)
-                        .offset()
-                    
-                 
+  
                 }
+                
 
             }
         }
         
-        .navigationTitle("")
-    }
-    
-}
+
 
 #Preview {
-    CardDetailedView()
+    CardDetailedView(card: CardIndividual(imageName: "card_ka"))
 }

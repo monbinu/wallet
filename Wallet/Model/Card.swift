@@ -13,7 +13,7 @@ struct CardIndividual: Identifiable {
     var id: UUID = UUID()
 
     var imageName: String = "noimage"
-    var color: Color = .blue
+    
     
     
     

@@ -8,11 +8,27 @@
 import SwiftUI
 
 struct TicketDetailedView: View {
+    
+    var ticket: TicketIndividual
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            
+            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Image(ticket.imageName)
+                    .aspectRatio(contentMode:.fit)
+                    .accessibilityLabel("wallet")
+                    .frame(width: 360, height: 513)
+                    .cornerRadius(8.0)
+                
+                
+            })
+            .padding()
+            
+
+        }
     }
 }
 
 #Preview {
-    TicketDetailedView()
+    TicketDetailedView(ticket: TicketIndividual(imageName: "card_dhl"))
 }

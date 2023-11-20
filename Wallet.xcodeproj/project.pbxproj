@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2111A662B0B6CCA0021E347 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */; };
+		B2111A6A2B0B73F90021E347 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A692B0B73F90021E347 /* TicketViewModel.swift */; };
+		B2111A6C2B0B742E0021E347 /* TicketDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */; };
+		B2111A6E2B0B74860021E347 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A6D2B0B74860021E347 /* Ticket.swift */; };
+		B2111A702B0B77AD0021E347 /* TransactionDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A6F2B0B77AD0021E347 /* TransactionDetailedView.swift */; };
 		B221F5382B04E7BF002EB89C /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B221F5372B04E7BF002EB89C /* CardViewModel.swift */; };
 		B282652C2B04B23C00A027AE /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652B2B04B23C00A027AE /* CardListView.swift */; };
 		B282652E2B04C3ED00A027AE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652D2B04C3ED00A027AE /* Card.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		B2111A692B0B73F90021E347 /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
+		B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailedView.swift; sourceTree = "<group>"; };
+		B2111A6D2B0B74860021E347 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		B2111A6F2B0B77AD0021E347 /* TransactionDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailedView.swift; sourceTree = "<group>"; };
 		B221F5372B04E7BF002EB89C /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
 		B282652B2B04B23C00A027AE /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		B282652D2B04C3ED00A027AE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -42,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				B282652D2B04C3ED00A027AE /* Card.swift */,
+				B2111A6D2B0B74860021E347 /* Ticket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -50,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B221F5372B04E7BF002EB89C /* CardViewModel.swift */,
+				B2111A692B0B73F90021E347 /* TicketViewModel.swift */,
+				B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -59,6 +72,8 @@
 			children = (
 				B282652B2B04B23C00A027AE /* CardListView.swift */,
 				B28265302B04CEA100A027AE /* CardDetailedView.swift */,
+				B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */,
+				B2111A6F2B0B77AD0021E347 /* TransactionDetailedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,11 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2111A6A2B0B73F90021E347 /* TicketViewModel.swift in Sources */,
 				B282652C2B04B23C00A027AE /* CardListView.swift in Sources */,
 				B2FBDB482B03954000792B68 /* WalletApp.swift in Sources */,
 				B28265312B04CEA100A027AE /* CardDetailedView.swift in Sources */,
 				B282652E2B04C3ED00A027AE /* Card.swift in Sources */,
+				B2111A6C2B0B742E0021E347 /* TicketDetailedView.swift in Sources */,
+				B2111A6E2B0B74860021E347 /* Ticket.swift in Sources */,
+				B2111A702B0B77AD0021E347 /* TransactionDetailedView.swift in Sources */,
 				B221F5382B04E7BF002EB89C /* CardViewModel.swift in Sources */,
+				B2111A662B0B6CCA0021E347 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
