@@ -19,8 +19,8 @@ struct CardListView: View {
     var body: some View {
         
         NavigationStack {
-            ScrollView{
-                VStack{
+    
+                ZStack{
                     HStack{
                         Text("Wallet")
                             .font(.largeTitle.bold())
@@ -45,12 +45,15 @@ struct CardListView: View {
                 }
                 
                 
+            ScrollView{
                 
                 VStack() {
                     ForEach(viewModel.cards) { card in
                         CardDetailedView(card: card)
                         
-                    }
+                  
+                
+                }
                 }
                 .padding(.bottom,50)
                 
