@@ -82,18 +82,16 @@ struct TransactionDetailedView: View {
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
                         Button("Done", role: .cancel) {
-                            
+                            dismiss()
                         }
                     }
                 }
+             
             
         }
         
-        Text("Back")
-        
-            .onTapGesture {
-                presentationMode.wrappedValue.dismiss()
-            }
+
+         
     }
 }
 

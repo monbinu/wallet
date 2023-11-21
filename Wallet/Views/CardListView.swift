@@ -11,6 +11,7 @@ struct CardListView: View {
     @State private var showingSheet = false
     @State private var isShowingSheet = false
     @State private var addToWalletListPopOver = false
+    @Environment(\.dismiss) var dismiss
     
     @Environment(\.colorScheme)
     var colorScheme
