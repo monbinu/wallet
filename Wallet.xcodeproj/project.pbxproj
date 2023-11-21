@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2111A662B0B6CCA0021E347 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */; };
 		B2111A6A2B0B73F90021E347 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A692B0B73F90021E347 /* TicketViewModel.swift */; };
 		B2111A6C2B0B742E0021E347 /* TicketDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */; };
 		B2111A6E2B0B74860021E347 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2111A6D2B0B74860021E347 /* Ticket.swift */; };
@@ -16,13 +15,14 @@
 		B282652C2B04B23C00A027AE /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652B2B04B23C00A027AE /* CardListView.swift */; };
 		B282652E2B04C3ED00A027AE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652D2B04C3ED00A027AE /* Card.swift */; };
 		B28265312B04CEA100A027AE /* CardDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28265302B04CEA100A027AE /* CardDetailedView.swift */; };
+		B2CCC72A2B0CA2E40047AAD0 /* AddToWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */; };
+		B2CCC72C2B0CA7590047AAD0 /* AddToWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCC72B2B0CA7590047AAD0 /* AddToWalletViewModel.swift */; };
 		B2FBDB482B03954000792B68 /* WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBDB472B03954000792B68 /* WalletApp.swift */; };
 		B2FBDB4C2B03954100792B68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FBDB4B2B03954100792B68 /* Assets.xcassets */; };
 		B2FBDB4F2B03954100792B68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2FBDB4E2B03954100792B68 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		B2111A692B0B73F90021E347 /* TicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
 		B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailedView.swift; sourceTree = "<group>"; };
 		B2111A6D2B0B74860021E347 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
@@ -31,6 +31,8 @@
 		B282652B2B04B23C00A027AE /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		B282652D2B04C3ED00A027AE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B28265302B04CEA100A027AE /* CardDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailedView.swift; sourceTree = "<group>"; };
+		B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWalletView.swift; sourceTree = "<group>"; };
+		B2CCC72B2B0CA7590047AAD0 /* AddToWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWalletViewModel.swift; sourceTree = "<group>"; };
 		B2FBDB442B03954000792B68 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2FBDB472B03954000792B68 /* WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletApp.swift; sourceTree = "<group>"; };
 		B2FBDB4B2B03954100792B68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 			children = (
 				B221F5372B04E7BF002EB89C /* CardViewModel.swift */,
 				B2111A692B0B73F90021E347 /* TicketViewModel.swift */,
-				B2111A652B0B6CCA0021E347 /* TransactionViewModel.swift */,
+				B2CCC72B2B0CA7590047AAD0 /* AddToWalletViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				B282652B2B04B23C00A027AE /* CardListView.swift */,
+				B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */,
 				B28265302B04CEA100A027AE /* CardDetailedView.swift */,
 				B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */,
 				B2111A6F2B0B77AD0021E347 /* TransactionDetailedView.swift */,
@@ -190,11 +193,12 @@
 				B2FBDB482B03954000792B68 /* WalletApp.swift in Sources */,
 				B28265312B04CEA100A027AE /* CardDetailedView.swift in Sources */,
 				B282652E2B04C3ED00A027AE /* Card.swift in Sources */,
+				B2CCC72A2B0CA2E40047AAD0 /* AddToWalletView.swift in Sources */,
 				B2111A6C2B0B742E0021E347 /* TicketDetailedView.swift in Sources */,
 				B2111A6E2B0B74860021E347 /* Ticket.swift in Sources */,
 				B2111A702B0B77AD0021E347 /* TransactionDetailedView.swift in Sources */,
 				B221F5382B04E7BF002EB89C /* CardViewModel.swift in Sources */,
-				B2111A662B0B6CCA0021E347 /* TransactionViewModel.swift in Sources */,
+				B2CCC72C2B0CA7590047AAD0 /* AddToWalletViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@ import SwiftUI
 struct CardListView: View {
     @State private var showingSheet = false
     @State private var isShowingSheet = false
+    @State private var addToWalletListPopOver = false
+    
     @Environment(\.colorScheme)
     var colorScheme
     var viewModel = CardViewModel()
@@ -19,41 +21,43 @@ struct CardListView: View {
     var body: some View {
         
         NavigationStack {
-    
-                ZStack{
-                    HStack{
-                        Text("Wallet")
-                            .font(.largeTitle.bold())
-                        Spacer()
-                        NavigationLink {
-                            Text("Person View")
-                        } label: {
-                            Image(systemName: "shippingbox.circle.fill")
-                                .font(.largeTitle)
-                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
-                            
-                            Image(systemName: "plus.circle.fill")
-                                .font(.largeTitle)
-                                .background(Color(UIColor.systemBackground))
-                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
-                            
-                        }
-                    }
-                    .padding()
+            
+            ZStack{
+                HStack{
+                    Text("Wallet")
+                        .font(.largeTitle.bold())
+                    Spacer()
+                    Image(systemName: "shippingbox.circle.fill")
+                        .font(.largeTitle)
+                        .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
                     
-                    
+                    Button {
+                        addToWalletListPopOver = true
+                        
+                    } label: {
+                        
+                        Image(systemName: "plus.circle.fill")
+                            .font(.largeTitle)
+                            .background(Color(UIColor.systemBackground))
+                            .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                        
+                    }.popover(isPresented: $addToWalletListPopOver, content: {
+                        AddToWalletView()
+                    })
                 }
+                .padding()
                 
                 
+            }
+            
+            
             ScrollView{
                 
                 VStack() {
                     ForEach(viewModel.cards) { card in
                         CardDetailedView(card: card)
                         
-                  
-                
-                }
+                    }
                 }
                 .padding(.bottom,50)
                 
@@ -61,6 +65,7 @@ struct CardListView: View {
                     
                     ForEach(ticketModel.tickets) { ticket in
                         TicketDetailedView(ticket: ticket)
+                        
                     }
                     
                     
@@ -83,13 +88,11 @@ struct CardListView: View {
                     }
                 }
                 
-                
-                
+      
             }.sheet(isPresented: $isShowingSheet, content: {
                 SheetView(message: "")
             })
-            
-
+  
             
         }
         
@@ -98,8 +101,6 @@ struct CardListView: View {
     }
     
 }
-
-
 
 struct SheetView: View {
     let message: String
