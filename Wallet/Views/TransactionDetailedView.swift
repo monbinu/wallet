@@ -10,9 +10,6 @@ var viewModel = CardViewModel()
 var ticketModel = TicketViewModel()
 
 
-
-
-
 struct TransactionDetailedView: View {
     
     @Environment(\.presentationMode) var presentationMode
@@ -39,14 +36,17 @@ struct TransactionDetailedView: View {
                                 
                                 Text("$ 5.10")
                                     .multilineTextAlignment(.trailing)
+                                    
                             }
                             
                             Text("Jersy city, NJ")
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
                             Text("5/22/23")
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
                         }
                         
                     }
@@ -67,9 +67,37 @@ struct TransactionDetailedView: View {
                             Text("New York, NY")
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
+                            
                             Text("5/21/23")
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
+                        }
+                        
+                    }
+                    
+                    HStack{
+                        Image(systemName: "handbag.fill")
+                            .imageScale(.large)
+                        VStack(alignment: .leading){
+                            HStack{
+                                Text("Arc'teryx")
+                                    .bold()
+                                    .multilineTextAlignment(.leading)
+                                
+                                Text("$460.61")
+                                    .multilineTextAlignment(.trailing)
+                            }
+                            
+                            Text("Pending - arcteryx.com")
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
+                            Text("8 hours ago")
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.leading)
+                                .foregroundColor(.gray)
                         }
                         
                     }

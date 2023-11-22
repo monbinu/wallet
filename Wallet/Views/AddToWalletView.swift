@@ -40,6 +40,7 @@ struct AddToWalletView: View {
                         .bold()
                         .frame(maxWidth:.infinity,alignment: .leading)
                         .padding(.horizontal,30)
+                        .offset(y:13)
                     
                     List {
                         Section() {
@@ -47,7 +48,7 @@ struct AddToWalletView: View {
                                 Image(systemName: "tray.full.fill")
                                 Text("Previous Cards")
                             }
-                        }.listRowBackground(Color(.systemGray6))
+                        }//.listRowBackground(Color(.systemGray6))
                         
                         Section() {
                             HStack{
@@ -55,7 +56,7 @@ struct AddToWalletView: View {
                                 Text("Set Up Apple Pay Later")
                             }
                             
-                        }.listRowBackground(Color(.systemGray6))
+                        }//.listRowBackground(Color(.systemGray6))
                         
                         
                         Section() {
@@ -64,7 +65,7 @@ struct AddToWalletView: View {
                                 Text("Add Apple Account")
                             }
                             
-                        }.listRowBackground(Color(.systemGray6))
+                        }//.listRowBackground(Color(.systemGray6))
                         
                         
                         Section() {
@@ -82,12 +83,12 @@ struct AddToWalletView: View {
                                 Image(systemName: "person.text.rectangle.fill")
                                 Text("Driver's License or State ID")
                             }
-                        }.listRowBackground(Color(.systemGray6))
+                        }//.listRowBackground(Color(.systemGray6))
                         
                         
                         
                         
-                    }.scrollContentBackground(.hidden)
+                    }//.scrollContentBackground(.hidden)
                     
                        
                 }

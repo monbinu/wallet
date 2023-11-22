@@ -18,6 +18,7 @@ struct CardListView: View {
     var viewModel = CardViewModel()
     var ticketModel = TicketViewModel()
     
+    // @State public var offsetCount = 0
     
     var body: some View {
         
@@ -56,9 +57,13 @@ struct CardListView: View {
                 
                 VStack() {
                     ForEach(viewModel.cards) { card in
-                        CardDetailedView(card: card)
                         
-                    }
+                        
+                        CardDetailedView(card: card)
+                        //self.offsetCount? -= 30
+
+                                                                        
+                    }//.offset(y: CGFloat(offsetCount) * 10)
                 }
                 .padding(.bottom,50)
                 

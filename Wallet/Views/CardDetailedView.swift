@@ -10,6 +10,7 @@ import SwiftUI
 struct CardDetailedView: View {
     @State var showModal =  false
     
+    
     @State private var isSheetPresented =  false
     
     var card: CardIndividual
@@ -29,15 +30,19 @@ struct CardDetailedView: View {
                                 .cornerRadius(12.0)
                                 .fullScreenCover(isPresented: $showModal){
                                     TransactionDetailedView()
+                
                                 }
+                                
                             
                             
                         })
                         .padding()
+                        
                    
                     .sheet(isPresented: $isSheetPresented) {
                         TransactionDetailedView()
                     }
+                    
                     
 
                     
