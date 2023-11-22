@@ -11,8 +11,8 @@ struct CardViewModel {
     
     var cards:[CardIndividual] = [
         CardIndividual(imageName: "card_apple"),
-        CardIndividual(imageName: "card_cash"),
-        CardIndividual(imageName: "card_ka")
+        //CardIndividual(imageName: "card_cash"),
+        //CardIndividual(imageName: "card_ka")
     ]
     
     

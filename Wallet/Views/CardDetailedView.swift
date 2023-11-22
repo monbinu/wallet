@@ -23,15 +23,16 @@ struct CardDetailedView: View {
                     Button(action: { isSheetPresented.toggle()
                     }, label: {
                         
-                            Image(card.imageName)
+                        Image(card.imageName)
+                            .accessibilityAddTraits([.isButton])
                                 .aspectRatio(contentMode:.fit)
-                                .accessibilityLabel("wallet")
                                 .frame(width: 360, height: 229)
                                 .cornerRadius(12.0)
                                 .fullScreenCover(isPresented: $showModal){
                                     TransactionDetailedView()
                 
                                 }
+                                
                                 
                             
                             

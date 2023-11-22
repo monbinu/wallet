@@ -33,9 +33,11 @@ struct TransactionDetailedView: View {
                                 Text("Torico Ice Cream")
                                     .bold()
                                     .multilineTextAlignment(.leading)
+                                    .accessibilityLabel("Torico Ice Cream")
                                 
                                 Text("$ 5.10")
                                     .multilineTextAlignment(.trailing)
+                                    .accessibilityLabel("5 dollars and 10 cents")
                                     
                             }
                             
@@ -43,10 +45,13 @@ struct TransactionDetailedView: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.gray)
+                                .accessibilityLabel("Jersy city, New Jersy")
+                                
                             Text("5/22/23")
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.gray)
+                                .accessibilityLabel("5/22/23")
                         }
                         
                     }
@@ -114,6 +119,7 @@ struct TransactionDetailedView: View {
                         }
                     }
                 }
+                .accessibilityLabel("Latest Transactions")
              
             
         }

@@ -15,6 +15,7 @@
 		B282652C2B04B23C00A027AE /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652B2B04B23C00A027AE /* CardListView.swift */; };
 		B282652E2B04C3ED00A027AE /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B282652D2B04C3ED00A027AE /* Card.swift */; };
 		B28265312B04CEA100A027AE /* CardDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28265302B04CEA100A027AE /* CardDetailedView.swift */; };
+		B2A47B542B0E157B0048C163 /* TicketQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A47B532B0E157B0048C163 /* TicketQRView.swift */; };
 		B2CCC72A2B0CA2E40047AAD0 /* AddToWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */; };
 		B2CCC72C2B0CA7590047AAD0 /* AddToWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CCC72B2B0CA7590047AAD0 /* AddToWalletViewModel.swift */; };
 		B2FBDB482B03954000792B68 /* WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FBDB472B03954000792B68 /* WalletApp.swift */; };
@@ -31,6 +32,7 @@
 		B282652B2B04B23C00A027AE /* CardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListView.swift; sourceTree = "<group>"; };
 		B282652D2B04C3ED00A027AE /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B28265302B04CEA100A027AE /* CardDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailedView.swift; sourceTree = "<group>"; };
+		B2A47B532B0E157B0048C163 /* TicketQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketQRView.swift; sourceTree = "<group>"; };
 		B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWalletView.swift; sourceTree = "<group>"; };
 		B2CCC72B2B0CA7590047AAD0 /* AddToWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToWalletViewModel.swift; sourceTree = "<group>"; };
 		B2FBDB442B03954000792B68 /* Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				B2CCC7292B0CA2E40047AAD0 /* AddToWalletView.swift */,
 				B28265302B04CEA100A027AE /* CardDetailedView.swift */,
 				B2111A6B2B0B742E0021E347 /* TicketDetailedView.swift */,
+				B2A47B532B0E157B0048C163 /* TicketQRView.swift */,
 				B2111A6F2B0B77AD0021E347 /* TransactionDetailedView.swift */,
 			);
 			path = Views;
@@ -191,6 +194,7 @@
 				B2111A6A2B0B73F90021E347 /* TicketViewModel.swift in Sources */,
 				B282652C2B04B23C00A027AE /* CardListView.swift in Sources */,
 				B2FBDB482B03954000792B68 /* WalletApp.swift in Sources */,
+				B2A47B542B0E157B0048C163 /* TicketQRView.swift in Sources */,
 				B28265312B04CEA100A027AE /* CardDetailedView.swift in Sources */,
 				B282652E2B04C3ED00A027AE /* Card.swift in Sources */,
 				B2CCC72A2B0CA2E40047AAD0 /* AddToWalletView.swift in Sources */,

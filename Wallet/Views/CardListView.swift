@@ -27,11 +27,16 @@ struct CardListView: View {
             ZStack{
                 HStack{
                     Text("Wallet")
+                        .accessibilityAddTraits([.isHeader])
                         .font(.largeTitle.bold())
+                        .accessibilityLabel("Wallet")
                     Spacer()
                     Image(systemName: "shippingbox.circle.fill")
+                        .accessibilityAddTraits([.isButton])
                         .font(.largeTitle)
                         .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                        .accessibilityLabel("Orders")
+                        
                     
                     Button {
                         addToWalletListPopOver = true
@@ -39,9 +44,11 @@ struct CardListView: View {
                     } label: {
                         
                         Image(systemName: "plus.circle.fill")
+                            .accessibilityAddTraits([.isButton])
                             .font(.largeTitle)
                             .background(Color(UIColor.systemBackground))
                             .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                            .accessibilityLabel("Add Card")
                         
                     }.popover(isPresented: $addToWalletListPopOver, content: {
                         AddToWalletView()
@@ -57,13 +64,11 @@ struct CardListView: View {
                 
                 VStack() {
                     ForEach(viewModel.cards) { card in
-                        
-                        
-                        CardDetailedView(card: card)
+                    CardDetailedView(card: card)
                         //self.offsetCount? -= 30
-
-                                                                        
-                    }//.offset(y: CGFloat(offsetCount) * 10)
+                                                   
+                    }
+                    .accessibilityLabel("Apple Credit Card. Card number ends in 1234.  Activate the card to view the full card. Actions available.")//.offset(y: CGFloat(offsetCount) * 10)
                 }
                 .padding(.bottom,50)
                 
@@ -71,12 +76,12 @@ struct CardListView: View {
                     
                     ForEach(ticketModel.tickets) { ticket in
                         TicketDetailedView(ticket: ticket)
+                            .accessibilityLabel("Miles & More GMBH, Yun Jae Kim. Activate the card to view the full card. Actions available.")
+                            
                         
                     }
                     
-                    
-                    
-                    
+
                     ZStack(alignment: .bottom) {
                         ScrollView{
                             
@@ -88,6 +93,8 @@ struct CardListView: View {
                                 
                             }) {
                                 Text("View 56 Expired Passes")
+                                    .accessibilityAddTraits([.isButton])
+                                    .accessibilityLabel("View 56 Expired Passes.")
                             }
                             
                         }

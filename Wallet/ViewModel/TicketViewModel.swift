@@ -11,8 +11,8 @@ struct TicketViewModel {
     
     var tickets:[TicketIndividual] = [
         TicketIndividual(imageName: "card_luft"),
-        TicketIndividual(imageName: "card_dhl"),
-        TicketIndividual(imageName: "card_delta")
+        //TicketIndividual(imageName: "card_dhl"),
+        //TicketIndividual(imageName: "card_delta")
     ]
     
     
